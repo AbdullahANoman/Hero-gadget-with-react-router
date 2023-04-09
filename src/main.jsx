@@ -12,6 +12,7 @@ import Home from './components/Home';
 import Main from './components/Layout/Main';
 import About from './components/About';
 import Shop from './components/Shop/Shop';
+import Cart from './components/Cart/Cart';
   const router = createBrowserRouter([
     {
       path: "/",
@@ -30,6 +31,10 @@ import Shop from './components/Shop/Shop';
             path : 'shop',
             element : <Shop></Shop>,
             loader : ()=>fetch('products.json')
+        },
+        {
+          path:'cart',
+          element:<Cart></Cart>
         }
       ]
     },
