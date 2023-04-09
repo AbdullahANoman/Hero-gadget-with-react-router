@@ -13,6 +13,7 @@ import Main from './components/Layout/Main';
 import About from './components/About';
 import Shop from './components/Shop/Shop';
 import Cart from './components/Cart/Cart';
+import { productsAndCartData } from './loaders/cart&productdata';
   const router = createBrowserRouter([
     {
       path: "/",
@@ -34,7 +35,8 @@ import Cart from './components/Cart/Cart';
         },
         {
           path:'cart',
-          element:<Cart></Cart>
+          element:<Cart></Cart>,
+          loader:productsAndCartData,
         }
       ]
     },
