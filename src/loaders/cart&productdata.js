@@ -16,7 +16,7 @@ const productsAndCartData = async() =>{
         cart.push(value)
       }
     }
-    return cart;
+    return {cart,loadData};
     
 } 
 
