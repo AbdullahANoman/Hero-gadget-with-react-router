@@ -6,16 +6,7 @@ import CartProductDetails from '../CartProductDetails/CartProductDetails';
 const Cart = () => {
     const {cart,loadData} = useLoaderData()
     const [carts,setCarts] = useState(cart)
-    // const savedCart = getLocalStorageData()
-
-    // let cart = [];
-    // for(const id in savedCart){
-    //   const value =  products.find(p=>p.id===id)
-    //   if(value){
-    //     value.quantity = savedCart[id];
-    //     cart.push(value)
-    //   }
-    // }
+    
     console.log(cart)
     console.log(loadData)
     const handleRemove = id =>{
